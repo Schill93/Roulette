@@ -2,26 +2,15 @@ import random
 from random import *
 
 
-<<<<<<< HEAD
+
 def count():
 
     list = [5, 8, 11, 17, 35]
     #list=[17,35]
 
-=======
-for i in range (0,10):
-    b=randint(1,10)
-    c=randint(0,len(list)-1)
 
-    a=int(input("%s * %s \n" % (b,list[c])))
->>>>>>> origin/master
-
-    if a==0:
-        break
-
-
-    result=0
     x=0
+    result=0
 
     while x < len(list)-2:
 
@@ -37,17 +26,17 @@ for i in range (0,10):
         list.pop(c)
 
 
-    answer=int(input("Answer: \n"))
+        answer=int(input("Answer: \n"))
 
 
 
 
-    if answer==result:
-        print('Success')
-    else:
-        print('Fail')
-<<<<<<< HEAD
-        print(result)
+        if answer==result:
+            print('Success')
+        else:
+            print('Fail')
+
+            print(result)
 
 
 
@@ -55,9 +44,7 @@ def main():
     for i in range(0,10):
         count()
 
-=======
-        print("Correct answer is %s" % (b*list[c]))
->>>>>>> origin/master
+
 
 if __name__ == '__main__':
     main()
