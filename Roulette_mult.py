@@ -12,7 +12,8 @@ def count():
     x=0
     result=0
 
-    while x < len(list)-2:
+    while x < (len(list)-3):
+
 
         b=randint(1,20)
         c=randint(0,len(list)-1)
@@ -21,22 +22,24 @@ def count():
 
 
 
+
+
         print("%s * %s  " % ( list[c],b))
 
         list.pop(c)
 
 
-        answer=int(input("Answer: \n"))
+    answer=int(input("Answer: \n"))
 
 
 
 
-        if answer==result:
-            print('Success')
-        else:
-            print('Fail')
+    if answer==result:
+        print('Success')
+    else:
+        print('Fail')
 
-            print(result)
+        print(result)
 
 
 
